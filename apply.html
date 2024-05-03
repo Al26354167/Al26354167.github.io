@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./applystylesheet.css"/>
+	<title>Hot Beans Web</title>
+  <link rel="icon" type="image/x-icon" href="Hotbeansweb2.svg">
+</head>
+
+<header>
+
+<div class="logo-container" style="float: center;"> 
+<img src="Hotbeansweb2.svg" alt="Company Logo" style="width: 175px; height: 140px;"
+</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="checkPage('index.html')">Home</a></li>
+        <li><a href="about.html" onclick="checkPage('about.html')">About Us</a></li>
+        <li><a href="team.html" onclick="checkPage('team.html')">Meet The Team</a></li>
+        <li><a href="apply.html" onclick="checkPage('apply.html')">Apply</a></li>
+		<li><a href="contact.html" onclick="checkPage('contact.html')">Contact Us</a></li>
+      </ul>
+    </nav>
+<script> function checkPage(page) { if (window.location.href.endsWith(page)) { alert("You are already on this page."); event.preventDefault(); } } </script> 
+  </header>
+  
+  <body>
+  
+  <main class="flex-container">
+    <section class="flex-item">
+      <div class="lastbox">
+            <h2> Got What It Takes? </h2>
+            <p> We're not doubting your expertise, but a refresher can't hurt! <br>
+			<h2> What we want: </h2>
+As a web developer at our company, you'll need to: <br>
+
+<ul><li>Write code in one or more programming or scripting languages, such as PHP or JavaScript <br>
+<li>Plan and prototype new applications <br>
+<li>Design the architecture of the components of an application <br>
+<li>Decide on the best technologies and languages for the project <br>
+<li>Test sites and applications in different browsers and environments <br>
+<li>Problem-solve and fix bugs in existing projects <br>
+<li>Test new features thoroughly to ensure they perform the correct task in all cases <br>
+<li>Run performance benchmarking tests <br>
+<li>Review colleagues' code <br>
+<li>Build and test Application Program Interfaces (APIs) for applications to exchange data <br>
+<li>Research, incorporate and contribute to open-source projects <br>
+<li>Meet designers, developers and project staff for progress updates <br>
+<li>Gather requirements from clients and users <br>
+<li>Learn and test new technologies, frameworks and languages <br>
+<li>Build and maintain databases <br>
+<li>Carry out code refactoring and optimisation of existing code <br>
+<li>Document code, so other developers can understand and contribute to it <br>
+<li>Design information architecture within an application or website. </ul></li>
+Starting salaries for our web developers can range from £20,000 to £25,000 per annum. </p>
+			<h5>Requirements courtesy of https://www.prospects.ac.uk/job-profiles/web-developer</h5>
+			Recommended Courses: <br>
+        <li><a href="https://web.dev/learn" ">Web.dev</a></li>
+        <li><a href="https://digital.ucas.com/coursedisplay/courses/424d093a-dd0a-4ae6-bfaf-6697145599d1" ">Web Design And Development Top-up</a></li>
+		</p>
+        </div>
+    </section>
+    <section class="flex-item">
+      <h2>Apply Now!</h2>
+	  <form
+  action="https://formspree.io/f/xwkganpl" onsubmit="return validateForm()"
+  method="POST"
+>
+<script> function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+event.preventDefault();
+    return false;
+  }
+}</script>
+  <label>
+  
+    Your email:<br>
+    <input type="email" name="Email">
+  </label>
+  <br>
+  <br>
+  <label>
+    Name:<br>
+    <input type="text" name="Name">
+  </label>
+  <br>
+  <br>
+  <!-- your other form fields go here -->
+  <label>
+    Address:<br>
+    <input type="text" id="address" name="Address" placeholder="UK only">
+  </label>
+  <br>
+  <br>
+  <label>
+    Contact No.:<br>
+    <input type="tel" id="phone" name="Contact No." placeholder="01234567890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  </label>
+  <br>
+  <br>
+  <label>
+    Qualifications:<br>
+    <textarea name="Qualifications"></textarea>
+  </label>
+  <br>
+  <br>
+  <label>
+    Why do you want to work with us?<br>
+    <textarea name="Why do you want to work with us?"></textarea>
+  </label>
+  <br>
+  <br>
+  <button type="submit" value="Submit">Send</button>
+</form>
+   </section>
+  </main>
+  
+  </body>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Contact Information</h3>
+        <p>Email: info@hotbeansweb.com</p>
+        <p>Phone: 6ᔭƐ2-2Ɛ8-Ɛ16(1+)</p>
+        <p>Address: 10 Thirsk Road, Blankney </p>
+      </div>
+      <div class="social-media">
+        <h3>Connect with Us</h3>
+        <a href="https://facebook.com/Hotbeansweb" class="social-icon"><img width =50 src="Facebook.svg" alt="Facebook"></a>
+        <a href="https://twitter.com/Hotbeansweb" class="social-icon"><img width=50 src="Twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+

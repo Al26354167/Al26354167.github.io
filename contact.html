@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./stylesheet.css"/>
+	<title>Hot Beans Web</title>
+  <link rel="icon" type="image/x-icon" href="Hotbeansweb.svg">
+</head>
+
+<header>
+
+<div style="float: center;"> 
+<img src="Hotbeansweb.svg" 
+alt="Company Logo" 
+style="width: 175px; height: 140px;"> 
+</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" onclick="checkPage('index.html')">Home</a></li>
+        <li><a href="about.html" onclick="checkPage('about.html')">About Us</a></li>
+        <li><a href="team.html" onclick="checkPage('team.html')">Meet The Team</a></li>
+        <li><a href="apply.html" onclick="checkPage('apply.html')">Apply</a></li>
+		<li><a href="contact.html" onclick="checkPage('contact.html')">Contact Us</a></li>
+      </ul>
+    </nav>
+<script> function checkPage(page) { if (window.location.href.endsWith(page)) { alert("You are already on this page."); event.preventDefault(); } } </script> 
+  </header>
+  
+  <body>
+  
+  <main class="flex-container">
+    <section class="flex-item">
+      <h2>Have Questions?</h2>
+      <p>Please use this contact form, or reach out using the information in the footer.</p>
+      <h2>Contact Form</h2>
+      <div class="cool-form">
+<main>
+<form
+  action="https://formspree.io/f/mwkgnlwy"
+  method="POST"
+>
+  <label>
+    Your email: <br>
+    <input type="email" name="Email" required>
+  </label>
+<br>
+  <label>Your message: <br>
+    <textarea name="Message"></textarea required>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+<p> Immersion Toggle:</p>
+<audio controls autoplay> <!-- Starts audio element, displays controls for the element, sets to autoplay on page load. -->
+  <source src="immersion.mp3" type="audio/mpeg"> <!-- Sources audio from "immersion.mp3" and declares audio format -->
+Your browser does not support the audio element. <!-- Message which appears in case element is rendered in unsupported browser -->
+</audio> <!-- Ends audio element -->
+<h5>Description: Soothing elevator music.<br>"Local Forecast - Elevator" <br>Kevin MacLeod (incompetech.com) <br>
+Licensed under Creative Commons: By Attribution 4.0 License <br>
+http://creativecommons.org/licenses/by/4.0/</h5>
+</main>
+</div>
+    </section>
+  </main>
+  
+  </body>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Contact Information</h3>
+        <p>Email: info@hotbeansweb.com</p>
+        <p>Phone: 6ᔭƐ2-2Ɛ8-Ɛ16(1+)</p>
+        <p>Address: 10 Thirsk Road, Blankney </p>
+      </div>
+      <div class="social-media">
+        <h3>Connect with Us</h3>
+        <a href="https://facebook.com/Hotbeansweb" class="social-icon"><img width =50 src="Facebook.svg" alt="Facebook"></a>
+        <a href="https://twitter.com/Hotbeansweb" class="social-icon"><img width=50 src="Twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+

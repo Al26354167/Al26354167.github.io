@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html> <!-- Declares to browsers that the website uses HTML5 -->
+<html lang="en"> <!-- Declares in the metadata that the website is in English -->
+<head> <!-- Starts website head -->
+	<meta charset="UTF-8"> <!-- Declares in the metadata  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Declares to browsers that they should render the page in their own screen's width -->
+	<link rel="stylesheet" href="./stylesheet.css"/> <!-- Defines which CSS file the page uses -->
+	<title>Hot Beans Web</title> <!-- Establishes tab title -->
+  <link rel="icon" type="image/x-icon" href="Hotbeansweb.svg"> <!-- Establishes favicon -->
+</head> <!-- Ends website head -->
+
+<header> <!-- Starts page header -->
+<div style="float: center;"> <!-- Begins division element, describes display style of element -->
+<img src="Hotbeansweb.svg" 
+alt="Company Logo" 
+style="width: 175px; height: 140px;"> <!-- Inserts logo image, describes image fors screen readers, sets image dimensions -->
+</div> <!-- Ends division element -->
+    <nav> <!-- Starts navigation element -->
+      <ul> <!-- Starts list -->
+        <li><a href="index.html" onclick="checkPage('index.html')">Home</a></li> <!-- Creates a link to the "Home", calls on a script below to fire when clicked, titles the link "Home" -->
+        <li><a href="about.html" onclick="checkPage('about.html')">About Us</a></li> <!-- Same as above, but "About Us" -->
+        <li><a href="team.html" onclick="checkPage('team.html')">Meet The Team</a></li> <!-- Same as above, but "Meet The Team" -->
+        <li><a href="apply.html" onclick="checkPage('apply.html')">Apply</a></li> <!-- Same as above, but "Apply" -->
+		<li><a href="contact.html" onclick="checkPage('contact.html')">Contact Us</a></li> <!-- Same as above, but "Contact Us" -->
+      </ul> <!-- Ends list -->
+    </nav> <!-- Ends navigation element -->
+	<!-- Below, Script that checks what page it is currently on, creates alert box if user is attempting to visit the same page they're currently on -->
+<script> function checkPage(page) { if (window.location.href.endsWith(page)) { alert("You are already on this page."); event.preventDefault(); } } </script> 
+  </header> <!-- Ends page header -->
+  
+  <body> <!-- Starts page body -->
+  
+  <main class="flex-container"> <!-- Creates a "main" content element with a containing class for the following code -->
+    <section class="flex-item"> <!-- Creates a "section" element with a containing class for the following flexbox -->
+      <div class="home-image-container"> <!-- Creates a division element for the following image inside flex container -->
+            <img width="900" height="600" src="Network.jpg" alt="image of fiber optic cables lit up"> <!-- Sets image dimensions and inserts flavor image, describes image for screen readers -->
+			<!-- Below, Creates a division element and containing class for text which overlays above flavor image, inserts text and ends division element -->
+            <div class="home-overlay-text">Now Recruiting Web Developers!​</div> 
+        </div> <!-- Ends "home-image-container" division element -->
+    </section> <!-- Ends "flex-item" section element -->
+    <section class="flex-item"> <!-- Starts another section element with the same containing class as the last one for styling consistency -->
+      <h2>We're hiring!</h2> <!-- Creates a priority 2 heading in the flexbox -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <!-- Begins paragraph containing lorem ipsum text -->
+	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!-- Ends paragraph containing lorem ipsum text -->
+      <a href="apply.html" onclick="checkPage('apply.html')">Apply now!</a> <!-- Creates a link to the "Apply" page using same code as for navigation bar with different link name -->
+   </section> <!-- Ends "flex-item" section element -->
+  </main> <!-- Ends "main" content element -->
+  
+  </body> <!-- Ends page body -->
+  
+  <footer> <!-- Starts page footer -->
+    <div class="footer-content"> <!-- Creates a division element with containing class for following code -->
+      <div class="footer-info"> <!-- Creates a division element with containing class for the contact information section of footer -->
+        <h3>Contact Information</h3> <!-- Creates a priority 3 heading in footer -->
+        <p>Email: info@hotbeansweb.com</p> <!-- Creates paragraph containing (fake) Email address of company -->
+        <p>Phone: 6ᔭƐ2-2Ɛ8-Ɛ16(1+)</p> <!-- Creates paragraph containing (fake) Phone number of company -->
+        <p>Address: 10 Thirsk Road, Blankney </p> <!-- Creates paragraph containing (fake) address of company -->
+      </div> <!-- Ends "footer-content" division element -->
+      <div class="social-media"> <!-- Starts division element with containing class for the social media icons in the footer -->
+        <h3>Connect with Us</h3> <!-- Creates another priority 3 heading in the footer for style consistency -->
+		<!--Below, Creates link to (fake) website facebook page with respective website icon, defines class for icons for styling consistency, defines icon width, describes icon for screen readers -->
+        <a href="https://facebook.com/Hotbeansweb" class="social-icon"><img width =50 src="Facebook.svg" alt="Facebook"></a> 
+        <a href="https://twitter.com/Hotbeansweb" class="social-icon"><img width=50 src="Twitter.svg" alt="Twitter"></a> <!-- Same as above, but for Twitter -->
+      </div> <!-- Ends "social-media" division element -->
+    </div> <!-- Ends "footer-content" division element -->
+  </footer> <!-- Ends page footer -->
